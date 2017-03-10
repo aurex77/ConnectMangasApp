@@ -47,7 +47,7 @@ angular.module('starter.controllers', [])
         getCalendar: function(type) {
             return $http({
                 method: "GET",
-                url: PATH_MAC+'api/action/calendar',
+                url: '/api/action/calendar',
                 headers: {
                     'Client-Service': 'frontend-client',
                     'Auth-Key': 'simplerestapi'

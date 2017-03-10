@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-const PATH_MAC = "http://connectmangas.com/server/";
+const PATH_MAC = "https://connectmangas.com/server/";
 
 angular.module('starter', ['ionic', 'starter.controllers'])
 
