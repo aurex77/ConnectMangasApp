@@ -20,7 +20,7 @@ h1 {
 }
 
 .item-avatar {
-    padding-left: 10px;
+    padding-left: 10px !important;
 }
 
 .margin {

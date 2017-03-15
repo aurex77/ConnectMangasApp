@@ -17,7 +17,7 @@
                             infos[0].nb_days == 1 || infos[0].nb_days == 1 ? 'Demain' :
                             infos[0].nb_days ? 'Dans '+infos[0].nb_days+' jours' : 'Dans '+infos[0].nb_days+' jours' }} - {{day}}
                         </h2>
-                    <li class="card" ng-repeat="info in infos" style="width: 50%; display: inline-block;">
+                    <li class="card" ng-repeat="info in infos" style="width: 45%; display: inline-block;">
                         <div ng-if="info.img" style="padding-bottom: 20px;">
                             <img class="img-thumbnail img-hover img-center" ng-src="img/{{ info.type == 'manga' ? 'tomes' : 'animes' }}/{{ info.img }}">
                         </div>
