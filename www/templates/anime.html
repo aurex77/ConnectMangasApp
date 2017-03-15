@@ -1,0 +1,54 @@
+<ion-view view-title="Anime">
+    <ion-content>
+        <div class="list card">
+
+            <div class="item item-avatar">
+                <h2>{{ anime.title }}</h2>
+            </div>
+
+            <div class="item item-body">
+                <img class="full-image" src="img/animes/{{ anime.img_affiche }}">
+                <div flex-offset="5" flex style="padding-top: 15px;">
+                    <div>
+                        <a href="episodes/{{ anime.id_anime }}"><span class="md-headline">{{ anime.title }}</span></a>
+                    </div>
+                    <br>
+                    <div ng-if="anime.genres">
+                        <p>Genres : {{ anime.genres | prettycomma }}</p>
+                    </div>
+                    <div ng-if="anime.nb_episodes">
+                        <p>Nombre d'épisode(s) : {{ anime.nb_episodes }}</p>
+                    </div>
+                    <div ng-if="anime.public">
+                        <p>Public : {{ anime.public }}</p>
+                    </div>
+                    <div ng-if="anime.diffusion">
+                        <p>Diffusion: {{ anime.diffusion }}</p>
+                    </div>
+                    <div ng-if="anime.duration">
+                        <p>Durée : {{ anime.duration }}</p>
+                    </div>
+                    <div ng-if="anime.themes">
+                        <p>Thèmes : {{ anime.themes | prettycomma }}</p>
+                    </div>
+                    <div ng-if="anime.year">
+                        <p>Année : {{ anime.year }}</p>
+                    </div>
+                    <div ng-if="anime.month">
+                        <p>Mois : {{ anime.month }}</p>
+                    </div>
+                    <div ng-if="anime.studio">
+                        <p>Studio : {{ anime.studio }}</p>
+                    </div>
+                    <div ng-if="anime.season">
+                        <p>Saison : {{ anime.season }}</p>
+                    </div>
+                    <div>
+                        <a href="episodes/{{ anime.id_anime }}">Voir la liste des épisodes</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>

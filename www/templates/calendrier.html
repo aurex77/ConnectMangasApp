@@ -4,22 +4,20 @@
       <h1>Calendrier des prochaines sorties</h1>
 
       <ion-list>
-        <ion-radio ng-model="calendar" ng-value="animes" ng-change="displayCalendar()">Animes</ion-radio>
-        <ion-radio ng-model="calendar" ng-value="mangas" ng-change="displayCalendar()">Mangas</ion-radio>
+        <ion-radio ng-model="calendar" ng-value="'animes'" ng-change="displayCalendar('animes')">Animes</ion-radio>
+        <ion-radio ng-model="calendar" ng-value="'mangas'" ng-change="displayCalendar('mangas')">Mangas</ion-radio>
       </ion-list>
 
 
-      <div class="col-lg-12 col-md-12 well" ng-repeat="(day, infos) in days">
-            <div class="row">
-                <ul>
-                    <li class="col-lg-12 col-md-12" style="text-align: center;">
-                        <h2 style="border-bottom: 1px solid #C0C0C0; padding-bottom: 10px; font-size: 30px;">
+      <div ng-repeat="(day, infos) in days">
+            <div>
+                <ul class="card margin" style="width: 100%;">
+                        <h2 class="date_title item item-divider" style="text-align: center;">
                             {{ infos[0].nb_days == 0 || infos[0].nb_days == 0 ? "Aujourd'hui" :
                             infos[0].nb_days == 1 || infos[0].nb_days == 1 ? 'Demain' :
                             infos[0].nb_days ? 'Dans '+infos[0].nb_days+' jours' : 'Dans '+infos[0].nb_days+' jours' }} - {{day}}
                         </h2>
-                    </li>
-                    <li class="col-lg-2 col-md-2 col-sm-12 col-xs-12 well well-height" ng-repeat="info in infos">
+                    <li class="card" ng-repeat="info in infos" style="width: 50%; display: inline-block;">
                         <div ng-if="info.img" style="padding-bottom: 20px;">
                             <img class="img-thumbnail img-hover img-center" ng-src="img/{{ info.type == 'manga' ? 'tomes' : 'animes' }}/{{ info.img }}">
                         </div>

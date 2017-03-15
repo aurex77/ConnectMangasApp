@@ -1,1 +1,28 @@
 /* Empty. Add your own CSS if you like */
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    margin: 10px 0px;
+}
+
+.date_title {
+    font-weight: bold !important;
+    font-size: 20px !important;
+}
+
+.item-avatar {
+    padding-left: 10px;
+}
+
+.margin {
+    margin-top: 30px;
+}
