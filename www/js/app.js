@@ -6,7 +6,7 @@
 // 'starter.controllers' is found in controllers.js
 const PATH_MAC = "https://connectmangas.com/server/";
 
-angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('starter', ['ionic', 'starter.controllers', 'ionic-material'])
 
     .run(function($ionicPlatform) {
         $ionicPlatform.ready(function() {
