@@ -13,4 +13,4 @@ import { Calendrier } from './calendrier';
     Calendrier
   ]
 })
-export class CalendrierdModule {}
+export class CalendrierModule {}

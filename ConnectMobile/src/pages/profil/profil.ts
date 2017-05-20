@@ -9,16 +9,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  */
 @IonicPage()
 @Component({
-  selector: 'page-dashboard',
-  templateUrl: 'dashboard.html',
+  selector: 'page-profil',
+  templateUrl: 'profil.html',
 })
-export class Dashboard {
+export class Profil {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad Dashboard');
+    console.log('ionViewDidLoad Profil');
   }
 
 }

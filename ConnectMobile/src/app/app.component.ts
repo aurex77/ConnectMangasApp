@@ -3,6 +3,10 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { UserLogin } from '../pages/user-login/user-login';
 import { Dashboard } from '../pages/dashboard/dashboard';
+import { Calendrier } from '../pages/calendrier/calendrier';
+import { Collection } from '../pages/collection/collection';
+import { Profil } from '../pages/profil/profil';
+import { Suivi } from '../pages/suivi/suivi';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -30,10 +34,11 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Home',icon:'home', component: Dashboard },
-      { title: 'Profil', icon: 'contact', component: Dashboard },
-      { title: 'Collection', icon: 'images', component: Dashboard },
-      { title: 'Calendrier', icon: 'md-calendar', component: Dashboard  },
-      { title: 'Logout',icon:'lock', component: UserLogin }
+      { title: 'Profil', icon: 'contact', component: Profil },
+      { title: 'Collection', icon: 'images', component: Collection },
+      { title: 'Calendrier', icon: 'md-calendar', component: Calendrier  },
+      { title: 'Suivi', icon: 'ionitron', component: Suivi },
+      { title: 'Déconnexion',icon:'lock', component: UserLogin }
     ];
   }
 
